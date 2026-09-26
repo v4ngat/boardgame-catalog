@@ -8,10 +8,67 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Шапка з навігацією та пошуком -->
-<!-- Блок фільтрів (кількість гравців, жанр) -->
-<!-- Список карток ігор-->
-<!-- Підвал -->
+<header>
+    <h1>Каталог настільних ігор</h1>
+    <nav>
+        <a href="#family">Для Сім'ї</a>
+        <a href="#children">Для дітей</a>
+        <a href="#adults">Для дорослих 18+</a>
+        <a href="#party">Для вечірок</a>
+        <a href="#new">Новинки</a>
+    </nav>
+</header>
+<main>
+    <section id="filters">
+<h2>Фільтри</h2>
+        <form action="#" method="get">
+            <div>
+                <label for="search-name">Пошук за назвою:</label>
+                <input type="text" id="search-name" name="search" placeholder="Пошук товарів">
+            </div>
+            <div>
+                <label for="players-count">Кількість гравців:</label>
+                <input type="number" id="players-count" name="players" min="1" max="10">
+            </div>
+            <button type="submit">Застосувати</button>
+        </form>
+    </section>
+<section id="games">
+    <h2>Ігри</h2>
+    <article id="family">
+        <h3>Аліас</h3>
+        <img src="assets/img/alias.jpg" alt="Обкладинка гри &quot;Alias&quot;">
+        <p>Динамічна гра для кожного, де потрібно пояснювати слова своїй команді на час.</p>
+    </article>
+
+    <article id="children">
+        <h3>Магія слів</h3>
+        <img src="assets/img/words_of_magic.jpg" alt="Обкладинка гри &quot;Words of Magic&quot;">
+        <p>Чарівна дитяча гра, у якій ви будете відновлювати бібліотеку за допомогою складання слів. </p>
+    </article>
+    <article id="adults">
+        <h3>Зона. Таємниці Чорнобиля</h3>
+        <img src="assets/img/zona.jpg" alt="Обкладинка гри &quot;Zona: The Secret of Chernobyl&quot;">
+        <p>Пригодницька настільна гра, події якої відбуваються в Чорнобильській зоні відчуження.</p>
+    </article>
+
+    <article id="party">
+        <h3>Кодові імена: Гра слів</h3>
+        <img src="assets/img/codenames.jpg" alt="Обкладинка гри &quot;Codenames&quot;">
+        <p>Командна гра в слова, яка будується на дедукції й асоціативному мисленні.</p>
+    </article>
+
+    <article id="new">
+        <h3>Острів котів</h3>
+        <img src="assets/img/the_isle_of_cats.jpg" alt="Обкладинка гри &quot;The Isle of Cats&quot;">
+        <p>Розумна тетрісоподібна настілка з механіками тайловикладання, драфту та збирання наборів</p>
+    </article>
+
+</section>
+</main>
+<footer>
+    <p>Автор: Іван Галета</p>
+</footer>
 <script src="js/app.js"></script>
 </body>
 </html>
