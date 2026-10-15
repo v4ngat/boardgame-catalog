@@ -10,7 +10,7 @@ body {
     background-color: #E6E6FA;
     text-align: left;
 }
-header {
+.site-header {
 background-color: #5D3FD3;
     padding: 2rem 1.5rem;
     color: white;
@@ -18,34 +18,34 @@ background-color: #5D3FD3;
     text-align: center;
 
 }
-header h1 {
+.site-header h1 {
     font-size: 4rem;
 }
-header nav a {
+.site-header nav a {
     color: white;
     text-decoration: none;
     margin-right: 1.25rem;
     font-weight: bold;
 }
-main{
+.site-main{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
-section{
+.catalog-section{
     margin-bottom: 2.5rem;
 }
-form {
+.filters-form {
     padding: 1.5rem;
 }
 
-form input,
-form select {
+.filters-form input,
+.filters-form select {
     border: 1px solid #5D3FD3;
     padding: 0.5rem;  
     margin-bottom: 1rem;
 }
-form button {
+.filters-form button {
     background-color: #5D3FD3;
     color: white;
     padding: 0.75rem 1.5rem;
@@ -56,33 +56,32 @@ form button {
     cursor: pointer;
     width: 43%;
 }
-form button:hover {
+.filters-form button:hover {
     background-color: slateblue;
     color: blueviolet;
     cursor: pointer;
     text-decoration: none;
 }
-article {
+.game-card {
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #00bfa6;
 }
-article:hover {
+.game-card:hover {
     box-shadow: 0 10px 20px rgba(93, 63, 211, 0.4);
 }
 
 .card-cover {
     height: 200px;
-    background-color: #ffd700;
+    width: 200px;
+    background-color: #F2F3F5;
     margin-bottom: 1rem;
+    display: block;
+    object-fit: contain;
 }
-aside {
-    background-color: #f0fdfa;
-    border: 2px solid #00bfa6;
-    padding: 1.5rem;
-}
-footer {
+.site-footer {
     padding: 2rem 1.5rem;
     color: grey;
     font-size: 0.85rem;
