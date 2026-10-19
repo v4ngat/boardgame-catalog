@@ -14,6 +14,13 @@ img {
     max-width: 100%;
     height: auto;
 }
+h1, h2, h3 {
+    font-family: 'Comic Relief', Arial, sans-serif;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 1.5rem;
+}
 .site-header {
 background-color: #5D3FD3;
     padding: 2rem 1.5rem;
@@ -62,8 +69,10 @@ background-color: #5D3FD3;
 }
 
 .filters-form button {
-    background-color: #5D3FD3;
-    color: white;
+    background-color: #FFD700;
+    color: #1A1A2E;
+    min-width: 44px;
+    min-height: 44px;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 4px;
@@ -72,8 +81,8 @@ background-color: #5D3FD3;
     cursor: pointer;
 }
 .filters-form button:hover {
-    background-color: slateblue;
-    color: blueviolet;
+    background-color: #FFC107;
+    color: #1A1A2E;
     cursor: pointer;
     text-decoration: none;
 }
@@ -83,6 +92,7 @@ background-color: #5D3FD3;
     gap: 1.5rem;
 }
 .game-card {
+    background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -91,7 +101,34 @@ background-color: #5D3FD3;
 .game-card:hover {
     box-shadow: 0 10px 20px rgba(93, 63, 211, 0.4);
 }
-
+/* Нечітка вимога: «каталог, яким приємно гортати».
+   Назви ігор набрано округлим шрифтом Comic Relief - він грайливий, як і самі настілки, і притягує погляд, коли пробігаєш очима по сітці карток.
+   Опис лишається нейтральним (Arial, темно-сірий), щоб його було легко читати і він не сперечався з назвою.
+   Жовтий бейдж кількості гравців - єдиний яскравий акцент картки, бо саме за ним найчастіше обирають гру. При наведенні на картку - назва гри підкреслюється жовтим олівцем, також додано для ефекту грайливості */
+.game-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #5D3FD3;
+    margin: 0 0 0.5rem;
+}
+.game-card:hover h3 {
+    text-decoration: underline wavy #FFC107;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+.game-card p {
+    color: #3D3D4E;
+}
+.players-badge {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #1A1A2E;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+}
 .card-cover {
     height: 200px;
     width: 200px;
@@ -102,7 +139,7 @@ background-color: #5D3FD3;
 }
 .site-footer {
     padding: 2rem 1.5rem;
-    color: grey;
+    color: #555555;
     font-size: 0.85rem;
 }
 @media (min-width: 600px) {
